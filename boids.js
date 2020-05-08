@@ -411,7 +411,7 @@ for (let i = 0; i < 100; i++) {
 function animate() {
     requestAnimationFrame(animate)
     if (play) {
-        // ctx.clearRect(0, 0, canvas.width, canvas.height)
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
 
 
         boids.forEach(b => {
