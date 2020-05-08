@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boids</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            font-family: sans-serif;
+            color: white;
+            padding: 0.5em 1em;
+            margin: 0;
+            backdrop-filter: blur(5px);
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 1em 0;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Boids <button onclick="togglePlay()">Pause/Play</button></h1>
+
+    <canvas id="boidsCanvas"></canvas>
+
+    <script src="boids.js"></script>
+</body>
+</html>
