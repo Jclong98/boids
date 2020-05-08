@@ -40,7 +40,7 @@ class Boid {
 
         this.maxSpeed = maxSpeed
         this.color = color
-        
+
         this.visionRadius = 50
         this.maxForce = 0.05
         this.mouseSteeringForce = 0.01
@@ -379,14 +379,6 @@ canvas.onmouseleave = () => {
     }
 }
 
-play = false
-
-function togglePlay() {
-    if (play)
-        play = false
-    else
-        play = true
-}
 
 let boids = []
 for (let i = 0; i < 100; i++) {
@@ -410,14 +402,12 @@ for (let i = 0; i < 100; i++) {
 
 function animate() {
     requestAnimationFrame(animate)
-    if (play) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
 
 
-        boids.forEach(b => {
-            b.update()
-        })
-    }
+    boids.forEach(b => {
+        b.update()
+    })
 }
 
 animate()
